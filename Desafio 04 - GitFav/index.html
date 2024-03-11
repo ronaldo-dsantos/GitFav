@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GitFav</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+        <img src="assets/Gitfav.svg" alt="Logo GitFav">
+        <div class="search">
+            <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+            <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+            <button>                                 
+              favoritar                  
+            </button>
+        </div>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Ação</th>
+          </tr>
+        </thead>         
+
+        <tbody>
+          <tr>
+            <td class="user">
+              <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
+              <a href="https://github.com/maykbrito" target="_blank">
+                <p>Mayk Brito</p>
+                <span>/maykbrito</span>
+              </a>
+            </td>
+            <td class="repositories">
+              <p>123</p>
+            </td>
+            <td class="followers">
+              <p>1234</p>
+            </td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="user">
+              <img src="https://github.com/diego3g.png" alt="Imagem de Diego Fernandes">
+              <a href="https://github.com/diego3g" target="_blank">
+                <p>Diego Fernandes</p>
+                <span>/diego3g</span>
+              </a>
+            </td>
+            <td class="repositories">
+              <p>123</p>
+            </td>
+            <td class="followers">
+              <p>1234</p>
+            </td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="user">
+              <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
+              <a href="https://github.com/maykbrito" target="_blank">
+                <p>Mayk Brito</p>
+                <span>/maykbrito</span>
+              </a>
+            </td>
+            <td class="repositories">
+              <p>123</p>
+            </td>
+            <td class="followers">
+              <p>1234</p>
+            </td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="user">
+              <img src="https://github.com/diego3g.png" alt="Imagem de Diego Fernandes">
+              <a href="https://github.com/diego3g" target="_blank">
+                <p>Diego Fernandes</p>
+                <span>/diego3g</span>
+              </a>
+            </td>
+            <td class="repositories">
+              <p>123</p>
+            </td>
+            <td class="followers">
+              <p>1234</p>
+            </td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      <!--<div class="star">
+        <img src="assets/Estrela.svg" alt="Desenho de uma estrela com carinha">
+        <p>Nenhum favorito ainda</p>
+      </div>-->
+
+    </div>      
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;  
+  background-color: #000;
+  color: #E1E1E6;
+}
+
+.sr-only { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 112.0rem;
+  margin: 0 auto; 
+  padding: 2;
+  margin-bottom: 11.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: 11.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  font-size: 1.6rem;      
+  color: #fff;
+
+  width: 46.2rem;
+  height: 4.8rem;
+  padding: 1.6rem; 
+
+  border-radius: .5rem;
+  background: #06181C;
+  border: none;
+}
+
+.search input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;      
+  color: #7C7C8A;
+}
+
+.search button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.2rem 3.2rem 1.2rem 6.4rem; 
+  text-transform: uppercase;
+  
+  border-radius: .5rem;
+  background: #065E7C;
+  border: none;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: .8rem; 
+
+  background-image: url(assets/star.svg);
+  background-repeat: no-repeat;
+  background-position: left 3.2rem top 50%;  
+}
+
+.search button:hover {
+  cursor: pointer;
+  color: #065E7C;
+  background-color: #fff;
+  background-image: url(assets/star-hover.svg);
+}
+
+.table-container {
+  margin-top: 8.7rem;
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;  
+  overflow: hidden;
+  max-height: 68.8rem;
+}
+
+table * {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #E1E1E6;
+}
+
+table {  
+  width: 100%;
+  border-collapse: collapse;  
+}
+
+/*barra de rolagem*/
+thead, tbody {
+  display: block;
+  width: 100%;
+}
+
+tbody {
+  max-height: 62.4rem;
+  overflow-y: scroll;
+}
+
+tbody::-webkit-scrollbar {
+  width: .6rem;
+}
+  
+tbody::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+  
+tbody::-webkit-scrollbar-thumb {
+  background-color: #4A808C;
+  border-radius: .6em;
+}
+/*barra de rolagem*/ 
+
+table th {    
+  padding: 1.6rem 2.4rem 1.6rem 4.0rem;
+  text-align: left; 
+  line-height: 3.2rem;
+  background-color: #092D38;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:first-child, 
+table td:first-child {
+  width: 50.4rem;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 21.8rem;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 22.0rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table th:last-child,
+table td:last-child {
+  width: 17.8rem;
+}
+
+table tr:nth-child(even) { /*nth-child(even) = linhas pares*/
+  background: #06181C;
+  border-top: 1px solid #4A808C;
+  border-bottom: 1px solid #4A808C;
+}
+
+table tr:nth-child(odd) { /*nth-child(odd) = linhas ímpares*/  
+  background: rgba(6, 22, 27, 0.50);  
+}
+
+table td {
+  padding: 2.4rem 2.4rem 2.4rem 4.0rem;
+  text-align: left; 
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;  
+}
+
+td.user p {
+  margin-bottom: .4rem;
+}
+
+td.user span {
+  font-weight: 400;
+}
+
+td .remove {
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  border: none;
+  color: #F75A68;  
+}
+
+td .remove:hover {
+  cursor: pointer;  
+}
+
+.noFavorites {
+  background-color: #030B0D;
+  padding: 21.0rem 19.2rem 28.9rem;
+
+  display: flex;
+  align-items: center;
+  gap: 6.0rem;
+}
+
+.noFavorites img {
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
+.noFavorites p {
+  font-family: "Roboto Mono", monospace;
+  color: #4E5455;
+  font-size: 4.0rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
+
+ 
+
+
